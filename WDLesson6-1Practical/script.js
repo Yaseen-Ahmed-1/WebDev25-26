@@ -6,16 +6,16 @@ Challenge 1: Add the appropriate images to each array below from the list of ima
 //Challenge 2: Add appropriate prices for each food in their corresponding array. (Any reasonable price works) 
 //Challenge 3: Add appropriate titles for each food in their corresponding array. Use the image names as a hint for the food title.
 
-let meat_images = ["beeftips.jpg", "brisket.jpg", "ribeye.jpg", "steak.jpg",];
-let meat_prices = [5, 6, 7, 8];
-let meat_titles = ["Beef Tips","Brisket","Ribeye","Steak"];
+let meat_images = ["brisket.jpg", "ribeye.jpg", "steak.jpg",];
+let meat_prices = [5, 6, 7, ];
+let meat_titles = ["Brisket","Ribeye","Steak"];
 
 let seafood_images = ["clams.jpg", "crabs.jpg", "lobster.png", "scallops.jpg", "shrimp.jpg","tuna.jpg",];
 let seafood_prices = [7, 8, 9, 10, 15, 16];
 let seafood_titles = ["Clams","Crabs","Lobster","Scallops", "Shrimp", "Tuna"];
 
 let dessert_images = [ "flan.jpg", "passionberry.jpeg", "oreocup.jpg"];
-let dessert_prices = [11, 12, 13, 14];
+let dessert_prices = [11, 12, 13,];
 let dessert_titles = ["Flan","passionberry","oreocup",];
 
 function init(){
@@ -37,7 +37,7 @@ build = "";
     build += `
       <div class="card">
         <h3>${meat_titles[i]}</h3>
-        <img src="${meat_images[i]}">
+        <img src="images/${meat_images[i]}">
         <p>$${meat_prices[i]}</p>
       </div>
     `;
@@ -49,7 +49,7 @@ build = "";
     build += `
       <div class="card">
         <h3>${seafood_titles[i]}</h3>
-        <img src="${seafood_images[i]}">
+        <img src="images/${seafood_images[i]}">
         <p>$${seafood_prices[i]}</p>
       </div>
     `;
@@ -61,7 +61,7 @@ build = "";
     build += `
       <div class="card">
         <h3>${dessert_titles[i]}</h3>
-        <img src="${dessert_images[i]}">
+        <img src="images/${dessert_images[i]}">
         <p>$${dessert_prices[i]}</p>
       </div>
     `;
